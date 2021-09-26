@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import Cart from '../Cart/Cart';
-import Course from '../Course/Course';
+import React, { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
+import Course from "../Course/Course";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch('./course.JSON')
+    fetch("./course.JSON")
       .then(res => res.json())
       .then(data => setCourses(data));
   }, []);
@@ -18,10 +18,10 @@ const Courses = () => {
   }
 
   return (
-    <div className='container my-5'>
+    <div className="container my-5">
       <div className="row">
         <div className="col-md-9">
-          <div className='row row-cols-1 row-cols-md-3 g-2'>
+          <div className="row row-cols-1 row-cols-md-3 g-2">
             {
               courses.map(course => <Course
                 course={course}

@@ -2,7 +2,6 @@ import React from 'react';
 
 const Item = (props) => {
   const { title, image, price } = props.item;
-  // console.log(props.title);
 
   return (
     <div>
@@ -18,6 +17,7 @@ const Item = (props) => {
             </div>
           </div>
         </div>
+      
       </div>
     </div>
   );

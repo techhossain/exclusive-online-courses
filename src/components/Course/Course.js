@@ -10,11 +10,11 @@ const Course = (props) => {
   return (
     <div className="col">
       <div className="card h-100">
-        <img src={image} className="card-img-top" alt="{title}" />
+        <img src={image} className="card-img-top" alt={title} />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <h6 className="d-flex justify-content-between">
-            <span><i class="fas fa-user-alt"></i> {trainer} </span> |
+            <span><i className="fas fa-user-alt"></i> {trainer} </span> |
             <span className="text-end">Enrolled: {totalEnrolled}</span>
           </h6>
           <p className="card-text">{description}</p>
@@ -33,7 +33,7 @@ const Course = (props) => {
             |
             <button
               onClick={() => props.handlePurchase(props.course)}
-              className="btn  btn-primary text-end"><i class="fas fa-shopping-cart"></i> Add Item</button>
+              className="btn  btn-primary text-end"><i className="fas fa-shopping-cart"></i> Add Item</button>
           </div>
           <h4>${price} </h4>
         </div>
