@@ -1,7 +1,9 @@
 # Exclusive online Courses
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Website Link [Create React App](https://vigilant-swanson-98c6c0.netlify.app/).
 
-## Available Scripts
+## Highlights
 
-In the project directory, you can run:
+* Display online courses from local JSON data
+* Worked on Add to cart functionality 
+* Update total price and quantity
